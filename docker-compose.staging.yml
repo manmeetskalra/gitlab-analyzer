@@ -1,0 +1,11 @@
+# Based off https://www.baeldung.com/spring-boot-postgresql-docker
+version: '2'
+
+services:
+  app:
+    container_name: gitlabanalyzer_app_staging
+    image: 'gitlabanalyzer:${CI_COMMIT_REF_SLUG}'
+    ports:
+      - 8080:8080
+  db:
+    container_name: gitlabanalyzer_db_staging

@@ -1,0 +1,149 @@
+stages:
+  - build
+  - docker-build
+  - unit-test
+  - dev-deploy
+  - frontend-test
+  - deploy
+
+before_script:
+  - export GRADLE_USER_HOME=`pwd`/.gradle # from https://stackoverflow.com/a/36050711
+
+cache: &global_cache
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .gradle
+    - .npm
+  policy: pull-push
+
+build:backend:
+  stage: build
+  script:
+    - ./gradlew assemble
+  image: gradle:jre15
+  artifacts:
+    paths:
+      - ./backend/build
+
+build:frontend:
+  stage: build
+  script:
+    - cd frontend
+    - npm ci --cache .npm --prefer-offline
+    - npm run build
+  image: node:lts-alpine
+  artifacts:
+    paths:
+      - ./frontend/build
+
+docker-build:
+  stage: docker-build
+  needs:
+    - build:backend
+    - build:frontend
+  dependencies:
+    - build:backend
+    - build:frontend
+  script:
+    - docker build -t gitlabanalyzer:$CI_COMMIT_REF_SLUG .
+  tags:
+    - shell
+  cache: {}
+
+unit-test:backend:
+  stage: unit-test
+  needs:
+    - build:backend
+  dependencies:
+    - build:backend
+  script:
+    - ./gradlew test
+  image: gradle:jre15
+  cache:
+    <<: *global_cache
+    policy: pull
+  artifacts:
+    reports:
+      junit: backend/build/test-results/test/**/TEST-*.xml
+
+deploy:dev:
+  stage: dev-deploy
+  needs:
+    - docker-build
+  script:
+    - docker-compose -f docker-compose.yml -f docker-compose.dev.yml -p gitlabanalyzer_dev down --volumes
+    - docker-compose -f docker-compose.yml -f docker-compose.dev.yml -p gitlabanalyzer_dev up -d
+    - curl --retry 30 --retry-delay 2 --retry-all-errors --connect-timeout 5 "http://localhost:9000" >> /dev/null
+  cache: {}
+  tags:
+    - shell
+  when: manual
+  environment:
+    name: dev
+    url: http://cmpt373-1211-14.cmpt.sfu.ca:9000/
+
+deploy:ci:
+  stage: dev-deploy
+  needs:
+    - docker-build
+  script:
+    - docker-compose -f docker-compose.yml -f docker-compose.ci.yml -p gitlabanalyzer_ci down --volumes
+    - docker-compose -f docker-compose.yml -f docker-compose.ci.yml -p gitlabanalyzer_ci up -d
+    - curl --retry 30 --retry-delay 2 --retry-all-errors --connect-timeout 5 "http://localhost:7000" >> /dev/null
+  cache: {}
+  tags:
+    - shell
+  environment:
+    name: ci
+    url: http://cmpt373-1211-14.cmpt.sfu.ca:7000/
+
+frontend-test:
+  stage: frontend-test
+  dependencies:
+    - deploy:ci
+  script:
+    - cd frontend
+    - npm ci --cache .npm --prefer-offline
+    - npm test -- --ci --reporters=default --reporters=jest-junit
+  allow_failure: true
+  image: buildkite/puppeteer
+  artifacts:
+    reports:
+      junit: frontend/junit.xml
+  variables:
+    REACT_APP_DEVHOST: http://host.docker.internal:7000/
+    GITLAB_HOST: http://host.docker.internal:8929/
+
+deploy:staging:
+  stage: deploy
+  needs:
+    - deploy:ci
+  script:
+    - docker-compose -f docker-compose.yml -f docker-compose.staging.yml -p gitlabanalyzer_staging down --volumes
+    - docker-compose -f docker-compose.yml -f docker-compose.staging.yml -p gitlabanalyzer_staging up -d
+    - curl --retry 30 --retry-delay 2 --retry-all-errors --connect-timeout 5 "http://localhost:8080" >> /dev/null
+  cache: {}
+  tags:
+    - shell
+  only:
+    - master
+  environment:
+    name: staging
+    url: http://cmpt373-1211-14.cmpt.sfu.ca:8080/
+
+deploy:prod:
+  stage: deploy
+  needs:
+    - deploy:ci
+  script:
+    - docker-compose -f docker-compose.yml -f docker-compose.prod.yml -p gitlabanalyzer_prod up -d
+    - curl --retry 30 --retry-delay 2 --retry-all-errors --connect-timeout 5 "http://localhost" >> /dev/null
+  cache: {}
+  tags:
+    - shell
+  only:
+    - master
+  when: manual
+  environment:
+    name: prod
+    url: http://cmpt373-1211-14.cmpt.sfu.ca/

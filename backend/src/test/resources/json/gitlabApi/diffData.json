@@ -1,0 +1,228 @@
+[
+  {
+    "commitId": "f2e045630c4ae08ab898470a271452de6c63f1c5",
+    "projectId": 27225,
+    "commitName": "Merge branch 'b10-CommitMessages' into 'master'",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:33:30Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/f2e045630c4ae08ab898470a271452de6c63f1c5",
+    "diffs": [
+      "{\"new_path\":\"tests/b10-CommitMessages/gpa.cpp\",\"renamed_file\":false,\"diff\":\"@@ -0,0 +1,128 @@\\n+#include <fstream>\\n\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "c27dd09a6834d3aa67144f8e9b2554aac88598a7",
+    "projectId": 27225,
+    "commitName": "c02-AddSyntaxLines  - on branch b06-Syntax",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:29:56Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/c27dd09a6834d3aa67144f8e9b2554aac88598a7",
+    "diffs": [
+      "{\"new_path\":\"tests/b06-Syntax/gpa.cpp\",\"renamed_file\":false,\"diff\":\"@@ -84,6 +90,9 @@ void printSummary(const student_t &student)\\n  *******************************************************/\\n student_t readStudent() \\n {\\n+\\t{\\n+\\t\\t{}\\n+\\t}\\n \\t// Open the file\\n \\tifstream inputFile(\\\"../jen.txt\\\");\\n \\tif (inputFile.fail()) {\\n\",\"old_path\":\"tests/b06-Syntax/gpa.cpp\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "c27dd09a6834d3aa67144f8e9b2554aac88598a7",
+    "projectId": 27225,
+    "commitName": "c02-AddSyntaxLines  - on branch b06-Syntax",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:29:56Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/c27dd09a6834d3aa67144f8e9b2554aac88598a7",
+    "diffs": [
+      "{\"new_path\":\"tests/b06-Syntax/gpa.cpp\",\"renamed_file\":false,\"diff\":\"@@ -84,6 +90,9 @@ void printSummary(const student_t &student)\\n  *******************************************************/\\n student_t readStudent() \\n {\\n-\\t{\\n-\\t\\t{}\\n-\\t}\\n \\t// Open the file\\n \\tifstream inputFile(\\\"../jen.txt\\\");\\n \\tif (inputFile.fail()) {\\n\",\"old_path\":\"tests/b06-Syntax/gpa.cpp\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "ea8121db9280c03e4b4e8cae7f14c9abd6f37759",
+    "projectId": 27225,
+    "commitName": "c05-DeleteOneLine  - on branch b02-RemoveContent",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:29:47Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/ea8121db9280c03e4b4e8cae7f14c9abd6f37759",
+    "diffs": [
+      "{\"new_path\":\"tests/b02-RemoveContent/folder-1/style.css\",\"renamed_file\":false,\"diff\":\"@@ -1,4 +1,3 @@\\n-\\n #content {\\n \\twidth: 550px;\\n \\tmargin-left: auto;\\n@@ -7,7 +6,6 @@\\n \\n #messages {\\n \\theight: 300px;\\n-\\toverflow: auto;\\n \\tbackground-color: #eee;\\n \\tmargin-bottom: 1em;\\n \\tmargin-right: 10px;\\n\",\"old_path\":\"tests/b02-RemoveContent/folder-1/style.css\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "ea8121db9280c03e4b4e8cae7f14c9abd6f37759",
+    "projectId": 27225,
+    "commitName": "c05-DeleteOneLine  - on branch b02-RemoveContent",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:29:47Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/ea8121db9280c03e4b4e8cae7f14c9abd6f37759",
+    "diffs": [
+      "{\"new_path\":\"tests/b02-RemoveContent/folder-1/math_ui.js\",\"renamed_file\":false,\"diff\":\"@@ -1,4 +1,3 @@\\n-\\\"use strict\\\";\\n // Client-side interactions with the browser.\\n \\n // Web sockets: automatically establish a socket with the server\\n@@ -19,7 +18,6 @@ $(document).ready(function() {\\n \\n \\t// Handle data coming back from the server\\n \\tsocket.on('daAnswer', function(result) {\\n-\\t\\t$('#messages').append(divMessage(result));\\n \\t});\\n \\t\\n \\tsocket.on('daError', function(result) {\\n@@ -78,5 +76,4 @@ function processCommand(command) {\\n //Wrap a string in a new <div> tag\\n function divMessage(inString) {\\n \\treturn $('<div><\/div>').text(inString);\\n-}\\n-\\n}\\n\\\\ No newline at end of file\\n\",\"old_path\":\"tests/b02-RemoveContent/folder-1/math_ui.js\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "e6b8a4db171abc050e36efddc506c8644c296ff0",
+    "projectId": 27225,
+    "commitName": "c03-DeleteMultipleFiles  - on branch b02-RemoveContent",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:29:47Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/e6b8a4db171abc050e36efddc506c8644c296ff0",
+    "diffs": [
+      "{\"new_path\":\"tests/b02-RemoveContent/folder-2/Ex09-CallStack/main.cpp\",\"renamed_file\":false,\"diff\":\"@@ -1,17 +0,0 @@\\n-#include <stdio.h>\\n-\\n-int foo(int a, char b, float c) {\\n-\\tint ans = a + b + c;\\n-\\treturn ans;\\n-}\\n-\\n-int main(void)\\n-{\\n-\\tint x = 1;\\n-\\tchar y = 'A';\\n-\\tx = foo(x, y, 3.14);\\n-\\n-\\tprintf(\\\"%c %c %c\\\\n\\\", 'h', 'i', '!');\\n-\\tprintf(\\\"%c %c %c\\\\n\\\");\\n-\\treturn 0;\\n-}\\n\\\\ No newline at end of file\\n\",\"old_path\":\"tests/b02-RemoveContent/folder-2/Ex09-CallStack/main.cpp\"}",
+      "{\"new_path\":\"tests/b02-RemoveContent/folder-2/Ex12-Vectors/passByVal.cpp\",\"renamed_file\":false,\"diff\":\"@@ -1,42 +0,0 @@\\n-// Demonstrate pass by value/ref\\n-#include <iostream>\\n-#include <string>\\n-using namespace std;\\n-\\n-void growOlder(int &inVal) \\n-{\\n-\\tcout << \\\"--> Start of function Age is: \\\" << inVal << endl;\\n-\\tinVal++;\\n-\\tcout << \\\"--> End of function Age is:   \\\" << inVal << endl;\\n-}\\n-\\n-\\n-void swapStrings(string &first, string &second) \\n-{\\n-\\tstring temp;\\n-\\ttemp = first;\\n-\\tfirst = second;\\n-\\tsecond = temp;\\n-}\\n-\\n-int main () \\n-{\\n-\\tint age = 25;\\n-\\tcout << \\\"Start of program age is: \\\" << age << endl;\\n-\\tgrowOlder(age);\\n-\\tcout << \\\"End of program age is:   \\\" << age << endl;\\n-\\t\\n-\\t/*\\n-\\t string a=\\\"Hello\\\";\\n-\\t string b=\\\"World\\\";\\n-\\t swapStrings(a,b);\\n-\\t cout << a << \\\" \\\" << b;\\n-\\t */\\n-}\\n-\\n-\\n-/* TO SHOW:\\n- - Predict output.\\n- - Run and show.\\n- - switch to pass-by-reference\\n- */\\n\",\"old_path\":\"tests/b02-RemoveContent/folder-2/Ex12-Vectors/passByVal.cpp\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "9b7335987cc3c7e6e41ca114fec908213441859b",
+    "projectId": 27225,
+    "commitName": "c06-DeleteMultilpeLines  - on branch b02-RemoveContent",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:29:47Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/9b7335987cc3c7e6e41ca114fec908213441859b",
+    "diffs": [
+      "{\"new_path\":\"tests/b02-RemoveContent/folder-1/splitcheque.cpp\",\"renamed_file\":false,\"diff\":\"@@ -1,14 +1,7 @@\\ninclude <iomanip>\\nusing namespace std;\\n-\\n int main()\\n {\\n \\tcout << \\\"This program helps you split the cheque:\\\\n\\\";\\n-\\n\\t// Read in number of people.\\n\\tcout << \\\"Enter # people: \\\";\\n\\tint numPeople = 0;\\n-\\n+\\t\\n \\t// Read in the bill amount\\n \\tcout << \\\"Enter $\\\";\\n \\tfloat billAmount = 0.0;\\n\",\"old_path\":\"tests/b02-RemoveContent/folder-1/splitcheque.cpp\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "ddaa8457df302f7755641ae4e51fd8cbc4920102",
+    "projectId": 27225,
+    "commitName": "c02-MoveContentDown  - on branch b09-MoveContent",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:30:04Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/ddaa8457df302f7755641ae4e51fd8cbc4920102",
+    "diffs": [
+      "{\"new_path\":\"tests/b09-MoveContent/index.html\",\"renamed_file\":false,\"diff\":\"@@ -7,19 +7,19 @@\\n \\n <body>\\n \\t<div id='content'>\\n+\\t\\t<h1>Demo Math Server via Node.js<\/h1>\\n \\t\\t\\n \\t\\t<form id='send-form' >\\n-\\t\\t\\t<input id='send-command'/>\\n-\\t\\t\\t<input id='send-button' type='submit' value='Send'/>\\n-\\t\\t\\t\\n \\t\\t\\t<div id='help'>\\n \\t\\t\\t\\tCommands:\\n \\t\\t\\t\\t<ul>\\n \\t\\t\\t\\t\\t<li>Addition: <code># + #<\/code>, example <code>10 + 32<\/code><\/li>\\n \\t\\t\\t\\t<\/ul>\\n \\t\\t\\t<\/div>\\n\",\"old_path\":\"tests/b09-MoveContent/index.html\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "470d224563453f5a2a199f3f2f82680aab4d2ae4",
+    "projectId": 27225,
+    "commitName": "c04-MoveFolder  - on branch b08-MoveFiles",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:30:01Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/470d224563453f5a2a199f3f2f82680aab4d2ae4",
+    "diffs": [
+      "{\"new_path\":\"tests/b08-MoveFiles/folder-1/folder-2/Ex09-CallStack/.idea/Ex09-CallStack.iml\",\"renamed_file\":true,\"diff\":\"\",\"old_path\":\"tests/b08-MoveFiles/folder-2/Ex09-CallStack/.idea/Ex09-CallStack.iml\"}",
+      "{\"new_path\":\"tests/b08-MoveFiles/folder-1/folder-2/Ex09-CallStack/.idea/deployment.xml\",\"renamed_file\":true,\"diff\":\"\",\"old_path\":\"tests/b08-MoveFiles/folder-2/Ex09-CallStack/.idea/deployment.xml\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "ddaa8457df302f7755641ae4e51fd8cbc4920102",
+    "projectId": 27225,
+    "commitName": "c02-MoveContentDown  - on branch b09-MoveContent",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:30:04Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/ddaa8457df302f7755641ae4e51fd8cbc4920102",
+    "diffs": [
+      "{\"new_path\":\"tests/b09-MoveContent/gpa.cpp\",\"renamed_file\":false,\"diff\":\"@@ -1,8 +1,8 @@\\n #include <fstream>\\n #include <iostream>\\n-#include <iomanip>\\n #include <vector>\\n using namespace std;\\n+#include <iomanip>\\n  \\n // Course & Student structure\\n struct course_t{\\n@@ -11,13 +11,6 @@ struct course_t{\\n \\tstring grade;\\n };\\n \\n-struct student_t{\\n-\\tint id;\\n-\\tstring first;\\n-\\tstring last;\\n-\\tvector<course_t> grades;\\n-};\\n-\\n \\n // Function Prototypes:\\n float gradeToGPA(string grade);\\n@@ -26,6 +19,13 @@ void printSummary(const student_t &student);\\n student_t readStudent();\\n void readGradesFromFile(ifstream &file, student_t &student);\\n \\n+struct student_t{\\n+\\tint id;\\n+\\tstring first;\\n+\\tstring last;\\n+\\tvector<course_t> grades;\\n+};\\n+\\n \\n int main() \\n {\\n@@ -67,21 +67,36 @@ void printSummary(const student_t &student)\\n \\t\\t\\t<< \\\" (#\\\" << student.id << \\\")\\\\n\\\";\\n \\n \\tcout << \\\"Courses:\\\\n\\\";\\n+\\tfloat gpa = computeGPA(student);\\n+\\tcout << \\\"Earned GPA \\\" << gpa \\n+\\t\\t\\t<< \\\" from \\\" << student.grades.size() << \\\" courses.\\\\n\\\";\\n+\\n \\tfor (course_t course : student.grades) {\\n \\t\\tcout << \\\"      \\\" << course.department << \\\" \\\" << course.number \\n \\t\\t\\t\\t<< \\\": \\\" << course.grade << endl;\\n \\t}\\n \\t\\n-\\tfloat gpa = computeGPA(student);\\n-\\tcout << \\\"Earned GPA \\\" << gpa \\n-\\t\\t\\t<< \\\" from \\\" << student.grades.size() << \\\" courses.\\\\n\\\";\\n-\\n }\\n \\n \\n /*******************************************************\\n  * Handle reading student/course info from file\\n  *******************************************************/\\n+void readGradesFromFile(ifstream &file, student_t &student) \\n+{\\n+\\tcourse_t course;\\n+\\twhile (file >> course.department) {\\n+\\t\\tfile >> course.number;\\n+\\t\\tfile >> course.grade;\\n+\\t\\tstudent.grades.push_back(course);\\n+\\n+\\t\\t// Check for errors\\n+\\t\\tif (file.fail()) {\\n+\\t\\t\\tcout << \\\"Unable to read course info from file.\\\\n\\\";\\n+\\t\\t\\texit(EXIT_FAILURE);\\n+\\t\\t}\\n+\\t}\\n+}\\n student_t readStudent() \\n {\\n \\t// Open the file\\n@@ -111,18 +126,3 @@ student_t readStudent()\\n \\treturn student;\\n }\\n \\n-void readGradesFromFile(ifstream &file, student_t &student) \\n-{\\n-\\tcourse_t course;\\n-\\twhile (file >> course.department) {\\n-\\t\\tfile >> course.number;\\n-\\t\\tfile >> course.grade;\\n-\\t\\tstudent.grades.push_back(course);\\n-\\n-\\t\\t// Check for errors\\n-\\t\\tif (file.fail()) {\\n-\\t\\t\\tcout << \\\"Unable to read course info from file.\\\\n\\\";\\n-\\t\\t\\texit(EXIT_FAILURE);\\n-\\t\\t}\\n-\\t}\\n-}\\n\",\"old_path\":\"tests/b09-MoveContent/gpa.cpp\"}",
+      "{\"new_path\":\"tests/b09-MoveContent/index.html\",\"renamed_file\":false,\"diff\":\"@@ -7,19 +7,19 @@\\n \\n <body>\\n \\t<div id='content'>\\n-\\t\\t<h1>Demo Math Server via Node.js</h1>\\n \\t\\t<div id='messages'></div>\\n+\\t\\t<h1>Demo Math Server via Node.js</h1>\\n \\t\\t\\n \\t\\t<form id='send-form' >\\n-\\t\\t\\t<input id='send-command'/>\\n-\\t\\t\\t<input id='send-button' type='submit' value='Send'/>\\n-\\t\\t\\t\\n \\t\\t\\t<div id='help'>\\n \\t\\t\\t\\tCommands:\\n \\t\\t\\t\\t<ul>\\n \\t\\t\\t\\t\\t<li>Addition: <code># + #</code>, example <code>10 + 32</code></li>\\n \\t\\t\\t\\t</ul>\\n \\t\\t\\t</div>\\n+\\t\\t\\t<input id='send-command'/>\\n+\\t\\t\\t<input id='send-button' type='submit' value='Send'/>\\n+\\t\\t\\t\\n \\t\\t</form>\\n \\t</div>\\n \\t\\n\",\"old_path\":\"tests/b09-MoveContent/index.html\"}",
+      "{\"new_path\":\"tests/b09-MoveContent/math_ui.js\",\"renamed_file\":false,\"diff\":\"@@ -11,10 +11,10 @@ $(document).ready(function() {\\n \\t\\n \\t// Allow sending the form (pressing enter).\\n \\t$('#send-form').submit(function() {\\n-\\t\\treadUserInput();\\n \\t\\t\\n \\t\\t// Return false to show we have handleded it.\\n \\t\\treturn false;\\n+\\t\\treadUserInput();\\n \\t});\\n \\n \\t// Handle data coming back from the server\\n@@ -29,44 +29,24 @@ $(document).ready(function() {\\n \\t\\n });\\n \\n-function readUserInput() {\\n-\\t// Get the user's input from the browser.\\n-\\tvar message = $('#send-command').val();\\n-\\t\\n-\\t// Display the command in the message list.\\n-\\t$('#messages').append(divMessage(message));\\n-\\n-\\t// Process the command\\n-\\tvar systemMessage = processCommand(message);\\n-\\tif (systemMessage != false) {\\n-\\t\\t$('#messages').append(divMessage(systemMessage));\\n-\\t}\\n-\\t\\n-\\t// Scroll window.\\n-\\t$('#messages').scrollTop($('#messages').prop('scrollHeight'));\\n-\\t\\n-\\t// Clear the user's command (ready for next command).\\n-\\t$('#send-command').val('');\\n-}\\n-\\n function processCommand(command) {\\n \\tvar words = command.split(' ');\\n \\tvar operation = words[1];\\n \\tvar returnMessage = false;\\n \\t\\n \\tswitch(operation) {\\n-\\tcase '+':\\n+\\t\\tcase '+':\\n \\t\\t// Convert arguments to numbers\\n \\t\\tvar x = Number(words[0]);\\n \\t\\tvar y = Number(words[2]);\\n \\t\\t\\n \\t\\t// Put numbers into a custom structure to send to server.\\n \\t\\tvar message = {\\n-\\t\\t\\t\\taddend1: x,\\n+\\t\\t\\taddend1: x,\\n \\t\\t\\t\\taddend2: y\\n \\t\\t};\\n \\t\\tsocket.emit('daAdd', message);\\n-\\n+\\t\\t\\n \\t\\tbreak;\\n \\t// ... more operations could go here..\\n \\tdefault:\\n@@ -74,6 +54,26 @@ function processCommand(command) {\\n \\t}\\n \\treturn returnMessage;\\n }\\n+function readUserInput() {\\n+\\t// Get the user's input from the browser.\\n+\\tvar message = $('#send-command').val();\\n+\\t\\n+\\t// Display the command in the message list.\\n+\\t$('#messages').append(divMessage(message));\\n+\\n+\\t// Process the command\\n+\\tvar systemMessage = processCommand(message);\\n+\\tif (systemMessage != false) {\\n+\\t\\t$('#messages').append(divMessage(systemMessage));\\n+\\t}\\n+\\t\\n+\\t// Scroll window.\\n+\\t$('#messages').scrollTop($('#messages').prop('scrollHeight'));\\n+\\t\\n+\\t// Clear the user's command (ready for next command).\\n+\\t$('#send-command').val('');\\n+}\\n+\\n \\n //Wrap a string in a new <div> tag\\n function divMessage(inString) {\\n\",\"old_path\":\"tests/b09-MoveContent/math_ui.js\"}",
+      "{\"new_path\":\"tests/b09-MoveContent/raven.txt\",\"renamed_file\":false,\"diff\":\"@@ -1,15 +1,8 @@\\n The Raven\\n-BY EDGAR ALLAN POE\\n Source: https://www.poetryfoundation.org/poems/48860/the-raven\\n+BY EDGAR ALLAN POE\\n \\n \\n-Once upon a midnight dreary, while I pondered, weak and weary,\\n-Over many a quaint and curious volume of forgotten lore—\\n-    While I nodded, nearly napping, suddenly there came a tapping,\\n-As of some one gently rapping, rapping at my chamber door.\\n-“’Tis some visitor,” I muttered, “tapping at my chamber door—\\n-            Only this and nothing more.”\\n-\\n     Ah, distinctly I remember it was in the bleak December;\\n And each separate dying ember wrought its ghost upon the floor.\\n     Eagerly I wished the morrow;—vainly I had sought to borrow\\n@@ -17,6 +10,13 @@ And each separate dying ember wrought its ghost upon the floor.\\n For the rare and radiant maiden whom the angels name Lenore—\\n             Nameless here for evermore.\\n \\n+Once upon a midnight dreary, while I pondered, weak and weary,\\n+Over many a quaint and curious volume of forgotten lore—\\n+    While I nodded, nearly napping, suddenly there came a tapping,\\n+As of some one gently rapping, rapping at my chamber door.\\n+“’Tis some visitor,” I muttered, “tapping at my chamber door—\\n+            Only this and nothing more.”\\n+\\n     And the silken, sad, uncertain rustling of each purple curtain\\n Thrilled me—filled me with fantastic terrors never felt before;\\n     So that now, to still the beating of my heart, I stood repeating\\n\",\"old_path\":\"tests/b09-MoveContent/raven.txt\"}",
+      "{\"new_path\":\"tests/b09-MoveContent/style.css\",\"renamed_file\":false,\"diff\":\"@@ -1,14 +1,14 @@\\n \\n #content {\\n-\\twidth: 550px;\\n \\tmargin-left: auto;\\n+\\twidth: 550px;\\n \\tmargin-right: auto;\\n }\\n \\n #messages {\\n+\\tmargin-bottom: 1em;\\n+\\tmargin-right: 10px;\\n \\theight: 300px;\\n \\toverflow: auto;\\n \\tbackground-color: #eee;\\n-\\tmargin-bottom: 1em;\\n-\\tmargin-right: 10px;\\n }\\n\\\\ No newline at end of file\\n\",\"old_path\":\"tests/b09-MoveContent/style.css\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "8277cd15e0e6c096f7da588ac22865768403c095",
+    "projectId": 27225,
+    "commitName": "c06-ChangeFunctionArgs  - on branch b03-EditContent",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:29:49Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/8277cd15e0e6c096f7da588ac22865768403c095",
+    "diffs": [
+      "{\"new_path\":\"tests/b03-EditContent/gpa.cpp\",\"renamed_file\":false,\"diff\":\"@@ -51,7 +51,7 @@ float computeGPA(student_t student)\\n \\tfloat sumGPA = 0;\\n \\tint numCourses = 0;\\n \\tfor (course_t course : student.grades) {\\n-\\t\\tsumGPA += gradeToGPA(course.grade);\\n+\\t\\tsumGPA += gradeToGPA(course.time);\\n \\t\\tnumCourses++;\\n \\t}\\n \\treturn sumGPA / numCourses;\\n@@ -67,7 +67,7 @@ void printSummary(const student_t &student)\\n \\t\\t\\t<< \\\" (#\\\" << student.id << \\\")\\\\n\\\";\\n \\n \\tcout << \\\"Courses:\\\\n\\\";\\n-\\tfor (course_t course : student.grades) {\\n+\\tfor (course_t nevermore : student.grades) {\\n \\t\\tcout << \\\"      \\\" << course.department << \\\" \\\" << course.number \\n \\t\\t\\t\\t<< \\\": \\\" << course.grade << endl;\\n \\t}\\n@@ -111,16 +111,16 @@ student_t readStudent()\\n \\treturn student;\\n }\\n \\n-void readGradesFromFile(ifstream &file, student_t &student) \\n+void readGradesFromFile(ifstream &bob, student_t &student) \\n {\\n \\tcourse_t course;\\n-\\twhile (file >> course.department) {\\n-\\t\\tfile >> course.number;\\n-\\t\\tfile >> course.grade;\\n+\\twhile (bob >> course.department) {\\n+\\t\\tbob >> course.number;\\n+\\t\\tbob >> course.grade;\\n \\t\\tstudent.grades.push_back(course);\\n \\n \\t\\t// Check for errors\\n-\\t\\tif (file.fail()) {\\n+\\t\\tif (bob.fail()) {\\n \\t\\t\\tcout << \\\"Unable to read course info from file.\\\\n\\\";\\n \\t\\t\\texit(EXIT_FAILURE);\\n \\t\\t}\\n\",\"old_path\":\"tests/b03-EditContent/gpa.cpp\"}"
+      ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "e63e140efeb7cd582d03d035a411ccf7c1e66b9e",
+    "projectId": 27225,
+    "commitName": "c04-AddBlockComments  - on branch b05-Comments",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:29:54Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/e63e140efeb7cd582d03d035a411ccf7c1e66b9e",
+    "diffs": [
+      "{\"new_path\":\"tests/b05-Comments/style.css\",\"renamed_file\":false,\"diff\":\"@@ -3,6 +3,10 @@\\n \\twidth: 550px;\\n \\tmargin-left: auto;\\n \\tmargin-right: auto;\\n+\\t/*  \\n+\\t\\tend of first block\\n+\\t\\tReally!\\n+\\t*/\\n }\\n \\n #messages {\\n@@ -10,5 +14,9 @@\\n \\toverflow: auto;\\n \\tbackground-color: #eee;\\n \\tmargin-bottom: 1em;\\n+/* MIDDLE\\n+OF \\n+BLOCK\\n+*/\\n \\tmargin-right: 10px;\\n }\\n\\\\ No newline at end of file\\n\",\"old_path\":\"tests/b05-Comments/style.css\"}",
+      "{\"new_path\":\"tests/b05-Comments/gpa.cpp\",\"renamed_file\":false,\"diff\":\"@@ -18,6 +18,11 @@ struct student_t{\\n \\tvector<course_t> grades;\\n };\\n \\n+/*\\n+\\tMultiple lines\\n+\\tgo \\n+\\there\\n+*/\\n \\n // Function Prototypes:\\n float gradeToGPA(string grade);\\n@@ -42,6 +47,10 @@ float gradeToGPA(string grade)\\n \\tif (grade == \\\"A\\\") return 4;\\n \\tif (grade == \\\"B\\\") return 3;\\n \\tif (grade == \\\"C\\\") return 2;\\n+\\t/*\\n+\\t\\tHere\\n+\\t\\ttoo!\\n+\\t*/\\n \\tif (grade == \\\"D\\\") return 1;\\n \\treturn 0;\\n }\\n\",\"old_path\":\"tests/b05-Comments/gpa.cpp\"}",
+      "{\"new_path\":\"tests/b05-Comments/math_ui.js\",\"renamed_file\":false,\"diff\":\"@@ -29,6 +29,10 @@ $(document).ready(function() {\\n \\t\\n });\\n \\n+/*\\n+This one is good\\n+Really good\\n+*/\\n function readUserInput() {\\n \\t// Get the user's input from the browser.\\n \\tvar message = $('#send-command').val();\\n@@ -62,6 +66,10 @@ function processCommand(command) {\\n \\t\\t\\n \\t\\t// Put numbers into a custom structure to send to server.\\n \\t\\tvar message = {\\n+\\t\\t\\t\\t/* \\n+\\t\\t\\t\\t\\tDefine structure\\n+\\t\\t\\t\\t\\timplicitly\\n+\\t\\t\\t\\t*/\\n \\t\\t\\t\\taddend1: x,\\n \\t\\t\\t\\taddend2: y\\n \\t\\t};\\n\",\"old_path\":\"tests/b05-Comments/math_ui.js\"}",
+      "{\"new_path\":\"tests/b05-Comments/gpa.cpp\",\"renamed_file\":false,\"diff\":\"@@ -18,11 +18,6 @@ struct student_t{\\n \\tvector<course_t> grades;\\n };\\n \\n-/*\\n-\\tMultiple lines\\n-\\tgo \\n-\\there\\n-*/\\n \\n // Function Prototypes:\\n float gradeToGPA(string grade);\\n@@ -47,10 +42,6 @@ float gradeToGPA(string grade)\\n \\tif (grade == \\\"A\\\") return 4;\\n \\tif (grade == \\\"B\\\") return 3;\\n \\tif (grade == \\\"C\\\") return 2;\\n-\\t/*\\n-\\t\\tHere\\n-\\t\\ttoo!\\n-\\t*/\\n \\tif (grade == \\\"D\\\") return 1;\\n \\treturn 0;\\n }\\n\",\"old_path\":\"tests/b05-Comments/gpa.cpp\"}",
+      "{\"new_path\":\"tests/b05-Comments/math_ui.js\",\"renamed_file\":false,\"diff\":\"@@ -28,11 +28,10 @@ $(document).ready(function() {\\n \\t});\\n \\t\\n });\\n-\\n /*\\n-This one is good\\n-Really good\\n-*/\\n function readUserInput() {\\n \\t// Get the user's input from the browser.\\n \\tvar message = $('#send-command').val();\\n@@ -66,10 +65,6 @@ function processCommand(command) {\\n \\t\\t\\n \\t\\t// Put numbers into a custom structure to send to server.\\n \\t\\tvar message = {\\n-\\t\\t\\t\\t/* \\n-\\t\\t\\t\\t\\tDefine structure\\n-\\t\\t\\t\\t\\timplicitly\\n-\\t\\t\\t\\t*/\\n \\t\\t\\t\\taddend1: x,\\n \\t\\t\\t\\taddend2: y\\n \\t\\t};\\n\",\"old_path\":\"tests/b05-Comments/math_ui.js\"}",
+      "{\"new_path\":\"tests/b05-Comments/style.css\",\"renamed_file\":false,\"diff\":\"@@ -3,20 +3,16 @@\\n \\twidth: 550px;\\n \\tmargin-left: auto;\\n \\tmargin-right: auto;\\n-\\t/*  \\n-\\t\\tend of first block\\n-\\t\\tReally!\\n-\\t*/\\n }\\n \\n+/* \\n+\\tFor next test\\n+*/\\n+\\n #messages {\\n \\theight: 300px;\\n \\toverflow: auto;\\n \\tbackground-color: #eee;\\n \\tmargin-bottom: 1em;\\n-/* MIDDLE\\n-OF \\n-BLOCK\\n-*/\\n \\tmargin-right: 10px;\\n }\\n\\\\ No newline at end of file\\n\",\"old_path\":\"tests/b05-Comments/style.css\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "12ccf36b7bc6661c39de4d16d43d4790691118e4",
+    "projectId": 27225,
+    "commitName": "c02-AddOneLineComments  - on branch b05-Comments",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:29:54Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/12ccf36b7bc6661c39de4d16d43d4790691118e4",
+    "diffs": [
+      "{\"new_path\":\"tests/b05-Comments/gpa.cpp\",\"renamed_file\":false,\"diff\":\"@@ -8,6 +8,7 @@ using namespace std;\\n struct course_t{\\n \\tstring department;\\n \\tint number;\\n+\\t// Yup, more numbers!\\t\\n \\tstring grade;\\n };\\n \\n@@ -42,6 +43,7 @@ float gradeToGPA(string grade)\\n \\tif (grade == \\\"A\\\") return 4;\\n \\tif (grade == \\\"B\\\") return 3;\\n \\tif (grade == \\\"C\\\") return 2;\\n+\\t// I know, we don't want this... but..\\n \\tif (grade == \\\"D\\\") return 1;\\n \\treturn 0;\\n }\\n\",\"old_path\":\"tests/b05-Comments/gpa.cpp\"}",
+      "{\"new_path\":\"tests/b05-Comments/index.html\",\"renamed_file\":false,\"diff\":\"@@ -1,4 +1,5 @@\\n <!DOCTYPE html>\\n+<!-- This is near the top. -->\\n <html lang='en'>\\n <head>\\n \\t<title>Demo Math Server via Node.js</title>\\n@@ -14,6 +15,7 @@\\n \\t\\t\\t<input id='send-command'/>\\n \\t\\t\\t<input id='send-button' type='submit' value='Send'/>\\n \\t\\t\\t\\n+\\t\\t\\t<!-- Divs are cool! -->\\n \\t\\t\\t<div id='help'>\\n \\t\\t\\t\\tCommands:\\n \\t\\t\\t\\t<ul>\\n\",\"old_path\":\"tests/b05-Comments/index.html\"}",
+      "{\"new_path\":\"tests/b05-Comments/math_ui.js\",\"renamed_file\":false,\"diff\":\"@@ -19,6 +19,7 @@ $(document).ready(function() {\\n \\n \\t// Handle data coming back from the server\\n \\tsocket.on('daAnswer', function(result) {\\n+\\t\\t// For da answer\\n \\t\\t$('#messages').append(divMessage(result));\\n \\t});\\n \\t\\n@@ -50,6 +51,7 @@ function readUserInput() {\\n }\\n \\n function processCommand(command) {\\n+\\t// Variables go here\\n \\tvar words = command.split(' ');\\n \\tvar operation = words[1];\\n \\tvar returnMessage = false;\\n\",\"old_path\":\"tests/b05-Comments/math_ui.js\"}",
+      "{\"new_path\":\"tests/b05-Comments/style.css\",\"renamed_file\":false,\"diff\":\"@@ -2,9 +2,11 @@\\n #content {\\n \\twidth: 550px;\\n \\tmargin-left: auto;\\n+\\t/* Do it \\\"right\\\" */\\n \\tmargin-right: auto;\\n }\\n \\n+/* Fromat messages */\\n #messages {\\n \\theight: 300px;\\n \\toverflow: auto;\\n\",\"old_path\":\"tests/b05-Comments/style.css\"}",
+      "{\"new_path\":\"tests/b05-Comments/gpa.cpp\",\"renamed_file\":false,\"diff\":\"@@ -8,7 +8,6 @@ using namespace std;\\n struct course_t{\\n \\tstring department;\\n \\tint number;\\n-\\t// Yup, more numbers!\\t\\n \\tstring grade;\\n };\\n \\n@@ -43,7 +42,6 @@ float gradeToGPA(string grade)\\n \\tif (grade == \\\"A\\\") return 4;\\n \\tif (grade == \\\"B\\\") return 3;\\n \\tif (grade == \\\"C\\\") return 2;\\n-\\t// I know, we don't want this... but..\\n \\tif (grade == \\\"D\\\") return 1;\\n \\treturn 0;\\n }\\n\",\"old_path\":\"tests/b05-Comments/gpa.cpp\"}",
+      "{\"new_path\":\"tests/b05-Comments/index.html\",\"renamed_file\":false,\"diff\":\"@@ -1,5 +1,4 @@\\n <!DOCTYPE html>\\n-<!-- This is near the top. -->\\n <html lang='en'>\\n <head>\\n \\t<title>Demo Math Server via Node.js</title>\\n@@ -15,7 +14,6 @@\\n \\t\\t\\t<input id='send-command'/>\\n \\t\\t\\t<input id='send-button' type='submit' value='Send'/>\\n \\t\\t\\t\\n-\\t\\t\\t<!-- Divs are cool! -->\\n \\t\\t\\t<div id='help'>\\n \\t\\t\\t\\tCommands:\\n \\t\\t\\t\\t<ul>\\n\",\"old_path\":\"tests/b05-Comments/index.html\"}",
+      "{\"new_path\":\"tests/b05-Comments/math_ui.js\",\"renamed_file\":false,\"diff\":\"@@ -19,7 +19,6 @@ $(document).ready(function() {\\n \\n \\t// Handle data coming back from the server\\n \\tsocket.on('daAnswer', function(result) {\\n-\\t\\t// For da answer\\n \\t\\t$('#messages').append(divMessage(result));\\n \\t});\\n \\t\\n@@ -51,7 +50,6 @@ function readUserInput() {\\n }\\n \\n function processCommand(command) {\\n-\\t// Variables go here\\n \\tvar words = command.split(' ');\\n \\tvar operation = words[1];\\n \\tvar returnMessage = false;\\n\",\"old_path\":\"tests/b05-Comments/math_ui.js\"}",
+      "{\"new_path\":\"tests/b05-Comments/style.css\",\"renamed_file\":false,\"diff\":\"@@ -2,11 +2,9 @@\\n #content {\\n \\twidth: 550px;\\n \\tmargin-left: auto;\\n-\\t/* Do it \\\"right\\\" */\\n \\tmargin-right: auto;\\n }\\n \\n-/* Fromat messages */\\n #messages {\\n \\theight: 300px;\\n \\toverflow: auto;\\n\",\"old_path\":\"tests/b05-Comments/style.css\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "86c0006d5c94e08f339a951940dd8b2616703612",
+    "projectId": 27225,
+    "commitName": "c03-RemoveOneLineComments  - on branch b05-Comments",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:29:54Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/86c0006d5c94e08f339a951940dd8b2616703612",
+    "diffs": [
+      "{\"new_path\":\"tests/b05-Comments/gpa.cpp\",\"renamed_file\":false,\"diff\":\"@@ -8,7 +8,6 @@ using namespace std;\\n struct course_t{\\n \\tstring department;\\n- \\tint number;\\n+ \\tint /* For da answer */ number;\\n\\tstring grade;\\n };\\n \\n@@ -43,7 +42,6 @@ float gradeToGPA(string grade)\\n \\tif (grade == \\\"A\\\") return 4;\\n \\tif (grade == \\\"B\\\") return 3;\\n \\tif (grade == \\\"C\\\") return 2;\\n\\tif (grade == \\\"D\\\") return 1;\\n \\treturn 0;\\n }\\n\",\"old_path\":\"tests/b05-Comments/gpa.cpp\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "86c0006d5c94e08f339a951940dd8b2616703612",
+    "projectId": 27225,
+    "commitName": "c03-RemoveOneLineComments  - on branch b05-Comments",
+    "author": "Brian Fraser",
+    "commitDate": "2021-03-23T05:29:54Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/bfraser/gitlabanalyzertest/-/commit/86c0006d5c94e08f339a951940dd8b2616703612",
+    "diffs": [
+      "{\"new_path\":\"tests/b05-Comments/gpa.cpp\",\"renamed_file\":false,\"diff\":\"@@ -8,7 +8,6 @@ using namespace std;\\n struct course_t{\\n \\tstring department;\\n- \\tint aNumber; //for da answer\\n+ \\tint number; //for da answer\\n\\tstring grade;\\n };\\n \\n@@ -43,7 +42,6 @@ float gradeToGPA(string grade)\\n \\tif (grade == \\\"A\\\") return 4;\\n \\tif (grade == \\\"B\\\") return 3;\\n \\tif (grade == \\\"C\\\") return 2;\\n\\tif (grade == \\\"D\\\") return 1;\\n \\treturn 0;\\n }\\n\",\"old_path\":\"tests/b05-Comments/gpa.cpp\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  },
+  {
+    "commitId": "86c0006d5c94e08f339a951940dd8b2616703612",
+    "projectId": 27225,
+    "commitName": "String Commit Test",
+    "author": "Kirat Sidhu",
+    "commitDate": "2021-03-23T05:29:54Z",
+    "url": "https://csil-git1.cs.surrey.sfu.ca/gss33/gitlabanalyzer/-/commit/86c0006d5c94e08f339a951940dd8b2616703612",
+    "diffs": [
+      "{\"new_path\":\"tests/b05-Comments/math_ui.js\",\"renamed_file\":false,\"diff\":\"@@ -29,6 +29,10 @@ $(document).ready(function() {\\n \\t\\n });\\n \\n+/*\\n+This one is good\\n+Really good\\n+*/\\n function readUserInput() {\\n \\t// Get the user's input from the browser.\\n \\tvar message = $('#send-command').val();\\n@@ -62,6 +66,10 @@ function processCommand(command) {\\n \\t\\t\\n \\t\\t// Put numbers into a custom structure to send to server.\\n \\t\\tvar message = {\\n-\\\"Hello there\\\"\\n+\\\"Bye There\\\"\\n \\t\\t};\\n\",\"old_path\":\"tests/b05-Comments/math_ui.js\"}"
+    ],
+    "hasMr": null,
+    "mriid": 0
+  }
+]

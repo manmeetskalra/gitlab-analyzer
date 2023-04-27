@@ -1,0 +1,7 @@
+{
+  "token": "test1",
+  "configurations": {
+        "Javascript": 1.2,
+        "CSS": 0.4
+      }
+}

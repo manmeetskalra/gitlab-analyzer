@@ -1,0 +1,24 @@
+# Based off https://www.baeldung.com/spring-boot-postgresql-docker
+version: '2'
+
+services:
+  app:
+    image: 'gitlabanalyzer'
+    build:
+      context: .
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/gitlabanalyzer
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  db:
+    image: 'postgres:13.2'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=gitlabanalyzer
